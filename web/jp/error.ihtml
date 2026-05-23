@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Error</title>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+  <SCRIPT language="JavaScript">
+  <!--
+    function back(){ history.back(); }
+  //-->
+  </SCRIPT>
+
+
+</head>
+
+<body bgcolor="#666666" text="#333333" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#993300">
+<div align=center>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td align="center" valign="middle"> 
+      <div align="center"> 
+        <table width="641" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+              <td><img src="/jp/img/shim.gif" width="1" height="1"></td>
+          </tr>
+        </table>
+      </div>
+        <table width="641" border="0" cellspacing="0" cellpadding="0" align="center" height="100">
+          <tr> 
+            <td width="639" height="44" align="left" valign="top" bgcolor="#FFCC00"><img src="/jp/img/log/log_tit.gif" width="175" height="44" alt="P-linkmap"></td>
+          <td width="41" height="38" rowspan="2"> 
+              <div align="right"><img src="/jp/img/log/log_right.gif" width="41" height="291"></div>
+          </td>
+        </tr>
+        <tr>
+          <form>
+              <td width="639" height="19" align="center" valign="top" bgcolor="#FFCC00"> 
+                <p><font size="2"><br>
+                  <br>
+                  ■<?=$response["title"] ?></font></p>
+                <p><font size="2"><?=$response["message"] ?></font></p>
+                <input type="button" value="前の画面に戻る"onClick="back();" name="button">
+              </td>
+              </form>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="bottom"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+    <td width="21%" align="left" bgcolor="#FFCC00"> 
+<img src="/jp/img/0/copylight.gif" width="202" height="18" alt="2002 P-LINKMAP. All rights reserved.">
+    </td>
+          <td width="79%" bgcolor="#FFCC00"> 
+              <div align="right"><a href="javascript:;" onMouseDown="MM_openBrWindow('form_q.html','','width=350,height=350')"><img src="/jp/img/0/q_botan.gif" width="24" height="18" border="0" alt="?"></a><a href="mailto:support@p-linkmap.com"><img src="/jp/img/0/mail_botan.gif" width="29" height="18" border="0"></a></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></div>
+</body>
+</html>

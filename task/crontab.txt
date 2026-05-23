@@ -1,0 +1,1 @@
+30 3 * * * sh /home/user/danzj000/task/everyday.sh

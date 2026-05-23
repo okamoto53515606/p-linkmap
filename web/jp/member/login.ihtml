@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+
+</head>
+
+<body bgcolor="#666666" text="#333333" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#993300">
+<div align=center>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td align="center" valign="middle"> 
+      <div align="center"> 
+        <table width="641" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+              <td><a href="../index.html"><img src="../img/log/log_t.gif" width="54" height="21" border="0" alt="TOPへ"></a></td>
+          </tr>
+        </table>
+      </div>
+      <table width="641" border="0" cellspacing="0" cellpadding="0" align="center" height="100">
+        <tr> 
+          <td width="639" height="44" align="left" valign="top" bgcolor="#FFCC00"><img src="../img/log/log_tit.gif" width="175" height="44" alt="P-linkmap"></td>
+          <td width="41" height="38" rowspan="2"> 
+            <div align="right"><img src="../img/log/log_right.gif" width="41" height="291"></div>
+          </td>
+        </tr>
+        <tr>
+          <form name="login" action="<?php print $this->url() ?>" method="post">
+          <td width="639" height="19" align="center" valign="middle" bgcolor="#FFCC00"> 
+
+
+              <table border=0 align="center" cellspacing=5 cellpadding=5>
+                <tr valign=top align=left> 
+                  <td><font size="1">ユーザーID:</font></td>
+                  <td> 
+                  
+                  
+                  <input type="text" name="username" value="<?php print (isset($this->auth["uname"]) ? $this->auth["uname"] : "" ) ?>" size=32 maxlength=32 style="background-color:#F3F3F3; border-style:0; font-size: 10; color: #000000;">
+                  
+
+                  </td>
+                </tr>
+                <tr valign=top align=left> 
+                  <td><font size="1">パスワード:</font></td>
+                  <td> <input type="password" name="password" size=32 maxlength=32 style="background-color:#F3F3F3; border-style:0; font-size: 10; color: #000000;">
+
+                  </td>
+                </tr>
+                <tr> 
+                  <td colspan="2" align=center><input type="submit" name="submitbtn" 
+                    value="ログイン" style="background-color:#F3F3F3; border-style:0; font-size: 10; color: #000000;">
+    
+
+                    
+
+                  </td>
+                </tr>
+                <tr> 
+                  <td colspan="2"> 
+                    <p align="center"><a href="/jp/pass.php"><font size="1">ID/PWを忘れてしまった</font></a></p>
+                  </td>
+                </tr>
+              </table>              
+
+                <?php global $username; if ( isset($username) ): ?><table
+                border=0 align="center" cellspacing=0 cellpadding=2 bgcolor=#FFFFFF>
+                  <tr valign=top align=left> 
+                <td>
+                <font size=1 color=red>ユーザ名かパスワードが違います！</font>
+                </td>
+                </tr>
+                </table><?php endif ?>
+
+
+
+<script language="JavaScript">
+<!--
+  // Activate the appropriate input form field.
+  if (document.login.username.value == '') {
+    document.login.username.focus();
+  } else {
+    document.login.password.focus();
+  }
+// -->
+</script>
+
+
+          </td><input type="hidden" name="challenge" value="<?php print $challenge ?>"><input 
+type="hidden" name="response"  value=""></form>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="bottom"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+    <td width="21%" align="left" bgcolor="#FFCC00"> 
+<img src="../img/0/copylight.gif" width="202" height="18" alt="2002 P-LINKMAP. All rights reserved.">
+    </td>
+          <td width="79%" bgcolor="#FFCC00"> 
+            <div align="right"><a href="javascript:;" onMouseDown="MM_openBrWindow('../form_q.html','','width=350,height=350')"><img src="../img/0/q_botan.gif" width="24" height="18" border="0" alt="?"></a><a href="mailto:support@p-linkmap.com"><img src="../img/0/mail_botan.gif" width="29" height="18" border="0"></a></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+
+<head>
+
+<title>Login</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+
+
+
+
+
+
+
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+
+
+<body onLoad="MM_preloadImages('../img/map_botan/07_f.gif')" background="../img/bg.gif">
+<div align=center>
+  <table width="640" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr> 
+      <td width="163" height="38"><img src="../img/0/001.gif" width="163" height="38" alt="P-linkmap"></td>
+      <td bgcolor="#FFFFFF" width="438" height="38"><img src="../img/0/002.gif" width="438" height="38"></td>
+      <td bgcolor="#FFFFFF" width="39" height="38"><img src="../img/0/003.gif" width="39" height="38"></td>
+    </tr>
+  </table>
+  <table width="640" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr> 
+      <td width="11" bgcolor="#FFFFFF"><img src="../img/shim.gif" width="11" height="22"></td>
+      <td width="36"><img src="../img/map_botan/01.gif" width="36" height="22" border="0" name="Image1" alt="MAP"></td>
+      <td width="81"><img src="../img/map_botan/02.gif" width="81" height="22" border="0" name="Image2" alt="リンクメール"></td>
+      <td width="40"><img src="../img/map_botan/04.gif" width="40" height="22" border="0" name="Image4" alt="検索"></td>
+      <td width="312"><img src="../img/map_botan/05_2.gif" width="312" height="22"></td>
+      <td width="85"><img src="../img/map_botan/06.gif" width="85" height="22" border="0" name="Image5" alt="登録内容の変更"></td>
+      <td width="75"><a href="/jp/member/samplelogout.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61','','../img/map_botan/07_f.gif',1)"><img src="../img/map_botan/07.gif" width="75" height="22" border="0" name="Image61" alt="ログアウト"></a></td>
+    </tr>
+  </table>
+  <table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" align="center">
+    <tr> 
+      <td><img src="../img/shim.gif" width="640" height="1"></td>
+    </tr>
+  </table>
+  <table width="640" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+    <tr> 
+      <td valign="top" bgcolor="#FFFFFF"> 
+        <table width="450" border="1" cellspacing="0" cellpadding="2" align="center" height="320" bgcolor="#666666" bordercolor="#FFFFFF">
+          <tr valign="top"> 
+            <td> 
+              <table width="100%" border="0" cellspacing="2" cellpadding="1">
+                <tr bgcolor="#FFFFFF"> 
+                  <td><font size="2" color="#FFCC00">■</font><font size="2">サンプルマップのご利用についての注意点 
+                    </font> </td>
+                </tr>
+                <tr> 
+                  <td valign="top" height="43"><font size="2" color="#FFFFFF">・自身のマップにログイン後、サンプルマップを利用する前に必ず、マップ画面で<b>ログアウト</b>して下さい。<br>
+                    サンプルマップの利用後にも必ず、<b>ログアウト</b>して下さい。 </font> </td>
+                </tr>
+              </table>
+              <p>　</p>
+              <form name="login" action="<?php print $this->url() ?>" method="post">
+                <div align="center"> 
+                  <input type="hidden" name="username" value="sazae">
+                  <input type="hidden" name="password" value="sazaesazae">
+                  <input type="submit" name="submitbtn"  value="サンプルマップにログイン！" 
+    style="background-color:#F3F3F3; border-style:0; font-size: 10; color: #000000;">
+                  <input type="hidden" name="challenge" value="<?php print $challenge ?>">
+                  <input type="hidden" name="response"  value="">
+                </div>
+              </form>
+
+            </td>
+          </tr>
+          <tr valign="bottom" bgcolor="#FFFFFF"> 
+            <td height="20">　</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td width="21%" align="left" bgcolor="#FFCC00"> <img src="../img/0/copylight.gif" width="202" height="18" alt="2002 P-LINKMAP. All rights reserved."> 
+      </td>
+      <td width="79%" bgcolor="#FFCC00"> 
+        <div align="right"><a href="javascript:;" onMouseDown="MM_openBrWindow('../form_q.html','','width=350,height=350')"><img src="../img/0/q_botan.gif" width="24" height="18" border="0" alt="?"></a></div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>
+
